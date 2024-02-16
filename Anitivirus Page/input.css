@@ -1,0 +1,36 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.section-container{
+    @apply max-w-6xl mx-auto text-center mb-20 px-10
+}
+/* body{
+    background-image: url(../images/pattern.jpg);
+    background-repeat: no-repeat;
+    background-opacity:80;
+
+
+} */
+
+
+@layer base{
+    h1{
+        @apply text-3xl;
+    }
+    h2{
+    @apply text-xl;
+    }
+}
+
+
+
+@layer components{
+    .btn-blue{
+        @apply bg-blue-500 px-5 
+        py-2 mt-2 ml-2 text-white font-semibold hover:bg-blue-700 duration-300 rounded-md;
+    }
+}
