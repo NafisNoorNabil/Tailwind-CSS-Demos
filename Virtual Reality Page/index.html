@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Reality</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+<header>
+
+</header>
+<body >
+    <!-- Top Section -->
+    <section id="top">
+        <div class="container max-w-10xl mx-auto  px-6 py-12 ">
+            <!-- nav -->
+            <nav class="flex items-center justify-between font-bold text-white">
+                <p class="text-3xl p-3 border-4 border-white font-nunito hover:border-violet-400 duration-200">N</p>
+                <div class="hidden h-10 text-xl font-nunito md:flex md:space-x-8 ">
+                    <div class="group">
+                        <a href="#">Events</a>
+                        <div class="mx-2  group-hover:border-b duration-200 group-hover:border-white"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#">Career</a>
+                        <div class="mx-2 group-hover:border-b duration-200 group-hover:border-white"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#">Products</a>
+                        <div class="mx-2 group-hover:border-b duration-200 group-hover:border-white"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#">About</a>
+                        <div class="mx-2 group-hover:border-b duration-200 group-hover:border-white"></div>
+                    </div>
+                </div>
+                <!-- hamburger button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline:none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+            </nav>
+            <!-- mobile menu -->
+            <div id="menu" class="absolute top-0 bottom-0 left-0 hidden flex-col font-nunito self-end w-full min-h-screen py-1 pt-40 pl-12  space-y-3 text-lg text-white uppercase bg-black">
+                <a href="" class="hover:text-violet-400 duration-200">Events</a>
+                <a href="" class="hover:text-violet-400 duration-200">Career</a>
+                <a href="" class="hover:text-violet-400 duration-200">Products</a>
+                <a href="" class="hover:text-violet-400 duration-200">About</a>
+            </div>
+            <div class="max-w-lg mt-32 mb-32 p-4 font-nunito text-4xl border-2 
+            uppercase md:p-10 md:m-32 md:mx-0 md:text-6xl text-white">Dive into augmented Reality</div>
+        </div>
+    </section>
+    <!-- feature -->
+    <section>
+        <div class="relative container flex  flex-col font-nunito max-w-6xl mx-auto my-32 
+        px-6 text-slate-600 md:flex-row md:px-0">
+            <img src="./images/desktop/image-interactive.jpg" alt="">
+            <div class="top-48 md:absolute bg-white pr-0 md:right-0
+            md:py-20 md:pl-20">
+                <h2 class="max-w-lg mt-10 mb-6 text-4xl text-center md:text-left md:text-5xl md:mt-0 uppercase">The pioneers of virtual reality</h2>
+                <p class="max-w-lg text-center text-base md:text-left">Loronsectetur a Repeficia maxime, modi, voluptatibus alias optio sequi et accusantium molestiae ab! Quia autem blanditiis, unde eum consequatur ex dolorum non.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container font-nunito max-w-6xl mx-auto my-32 px-6 text-slate-800 md:px-0">
+            <!-- header -->
+            <div class="flex justify-center mb-20 md:justify-between">
+                <h2 class="text-4xl text-center uppercase md:text-5xl md:text-left">Our Creations</h2>
+                <button class="hidden btn md:block">See More</button>
+            </div>
+            <!-- items  -->
+            <div class="flex flex-col justify-between w-full space-y-6 text-2xl
+            text-white uppercase md:flex-row md:space-y-0 md:space-x-8">
+                <div class="group relative overflow-hidden md:w-1/4">
+                    <img src="./images/desktop/image-deep-earth.jpg" alt="" class="hidden w-full duration-300 md:block group-hover:scale-105">
+                    <img src="./images/mobile/image-deep-earth.jpg" alt="" class="w-full duration-200 md:hidden">
+                    <!-- item text -->
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-transparent group-hover:to-transparent "></div>
+                    <h5 class="absolute px-6 w-52 bottom-4 md:bottom-8
+                     md:px-10">
+                        Earth
+                    </h5>
+                </div>
+                <div class="group relative overflow-hidden md:w-1/4">
+                    <img src="./images/desktop/image-curiosity.jpg" alt="" class="hidden w-full duration-300 md:block group-hover:scale-105">
+                    <img src="./images/mobile/image-curiosity.jpg" alt="" class="w-full duration-200 md:hidden">
+                    <!-- item text -->
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-transparent group-hover:to-transparent "></div>
+                    <h5 class="absolute px-6 w-52 bottom-4 md:bottom-8
+                     md:px-10">
+                        Mars
+                    </h5>
+                </div>
+                <div class="group relative overflow-hidden md:w-1/4">
+                    <img src="./images/desktop/image-fisheye.jpg" alt="" class="hidden w-full duration-300 md:block group-hover:scale-105">
+                    <img src="./images/mobile/image-fisheye.jpg" alt="" class="w-full duration-200 md:hidden">
+                    <!-- item text -->
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-transparent group-hover:to-transparent "></div>
+                    <h5 class="absolute px-6 w-52 bottom-4 md:bottom-8
+                     md:px-10">
+                        Eye
+                    </h5>
+                </div>
+                <div class="group relative overflow-hidden md:w-1/4">
+                    <img src="./images/desktop/image-from-above.jpg" alt="" class="hidden w-full duration-300 md:block group-hover:scale-105">
+                    <img src="./images/mobile/image-from-above.jpg" alt="" class="w-full duration-200 md:hidden">
+                    <!-- item text -->
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-transparent group-hover:to-transparent "></div>
+                    <h5 class="absolute px-6 w-52 bottom-4 md:bottom-8
+                     md:px-10">
+                        Roads
+                    </h5>
+                </div>
+            </div>
+            <!-- container 2 -->
+            <div class="flex flex-col justify-between mt-10 w-full space-y-6 text-2xl
+            text-white uppercase md:flex-row md:space-y-0 md:space-x-8">
+                <div class="group relative overflow-hidden md:w-1/4">
+                    <img src="./images/desktop/spaidu.jpg" alt="" class="hidden w-full duration-300 md:block group-hover:scale-105">
+                    <img src="./images/mobile/spaidu.jpg" alt="" class="w-full duration-200 md:hidden">
+                    <!-- item text -->
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-transparent group-hover:to-transparent "></div>
+                    <h5 class="absolute px-6 w-52 bottom-4 md:bottom-8
+                     md:px-10">
+                        Spider Man
+                    </h5>
+                </div>
+                <div class="group relative overflow-hidden md:w-1/4">
+                    <img src="./images/desktop/spaidu.jpg" alt="" class="hidden w-full duration-300 md:block group-hover:scale-105">
+                    <img src="./images/mobile/spaidu.jpg" alt="" class="w-full duration-200 md:hidden">
+                    <!-- item text -->
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-transparent group-hover:to-transparent "></div>
+                    <h5 class="absolute px-6 w-52 bottom-4 md:bottom-8
+                     md:px-10">
+                     Spider Man
+                    </h5>
+                </div>
+                <div class="group relative overflow-hidden md:w-1/4">
+                    <img src="./images/desktop/spaidu.jpg" alt="" class="hidden w-full duration-300 md:block group-hover:scale-105">
+                    <img src="./images/mobile/spaidu.jpg" alt="" class="w-full duration-200 md:hidden">
+                    <!-- item text -->
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-transparent group-hover:to-transparent "></div>
+                    <h5 class="absolute px-6 w-52 bottom-4 md:bottom-8
+                     md:px-10">
+                        Spider Man
+                    </h5>
+                </div>
+                <div class="group relative overflow-hidden md:w-1/4">
+                    <img src="./images/desktop/spaidu.jpg" alt="" class="hidden w-full duration-300 md:block group-hover:scale-105">
+                    <img src="./images/mobile/spaidu.jpg" alt="" class="w-full duration-200 md:hidden">
+                    <!-- item text -->
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-transparent group-hover:to-transparent "></div>
+                    <h5 class="absolute px-6 w-52 bottom-4 md:bottom-8
+                     md:px-10">
+                     Spider Man
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-slate-800">
+        <div class="max-w-6xl mx-auto text-center px-10 py-10">
+            <div class="flex flex-col items-center justify-between md:flex-row">
+            <!-- Image -->
+            <img src="/images/shield.svg" alt="" class="w-6 mb-10" />
+            <!-- Container for Menus & Social -->
+            <div class="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 font-poppins md:flex-row md:mb-0 md:space-y-0 text-gray-400">
+                <!-- Menus -->
+                <div class="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-24 md:space-y-0">
+                <!-- Menu 1 -->
+                    <div class="flex flex-col space-y-4 text-center md:text-left">
+                        <div>
+                            <a href="#" class="hover:text-gray-200">FAQs</a>
+                        </div>
+                        <div>
+                            <a href="#" class="hover:text-gray-200">Contact Us</a>
+                        </div>
+                    </div>
+                <!-- Menu 2 -->
+                    <div class="flex flex-col space-y-4 text-center md:text-left">
+                        <div>
+                            <a href="#" class="hover:text-gray-200">Privacy Policy</a>
+                        </div>
+                        <div>
+                            <a href="#" class="hover:text-gray-200">Press Kit</a>
+                        </div>
+                    </div>
+                <!-- Menu 3 -->
+                    <div class="flex flex-col space-y-4 text-center md:text-left">
+                        <div>
+                            <a href="#" class="hover:text-gray-200">Install Guide</a>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex justify-between w-32 py-1 group">
+                <a href="#"><img src="images/icon-facebook.svg" alt="" class="duration-200 ficon"/></a>
+                <a href="#"><img src="images/icon-twitter.svg" alt="" class="duration-200 ficon "/></a>
+                <a href="#"><img src="images/icon-instagram.svg" alt="" class="duration-200 ficon"/></a>
+            </div>
+            </div>
+          </div>
+        </div>
+
+</footer>
+
+</body>
+</html>
