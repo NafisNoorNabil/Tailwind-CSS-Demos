@@ -925,6 +925,11 @@ h2 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .duration-200 {
   transition-duration: 200ms;
 }
@@ -1001,6 +1006,11 @@ h2 {
 
 .open .hamburger-bottom{
   transform:rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.hover\:border-violet-900:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(76 29 149 / var(--tw-border-opacity));
 }
 
 .hover\:border-violet-400:hover {
