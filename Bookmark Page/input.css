@@ -15,7 +15,9 @@
     }
 
 
-
+*{
+    @apply transition-colors duration-50;
+}
 
 @layer base{
     h1{

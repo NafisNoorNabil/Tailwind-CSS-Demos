@@ -4,7 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'SF UI';
+    src: url('SFUIText-Light.ttf') format('truetype');
+    /* Add other font weights and styles as needed */
+  }
 
+  
 .section-container{
     @apply max-w-6xl mx-auto text-center mb-20 px-10
 }

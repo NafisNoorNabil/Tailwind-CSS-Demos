@@ -15,7 +15,8 @@ module.exports = {
         oswald:["Oswald"],
         roboto:["Roboto"],
         playfair:["Playfair Display"],
-        poppins:["Poppins"]
+        poppins:["Poppins"],
+  
       }
     }
   },

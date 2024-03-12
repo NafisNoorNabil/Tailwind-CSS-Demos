@@ -1,0 +1,159 @@
+
+
+body{
+    background-color: rgb(227, 250, 251);
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5f3ff;
+
+}
+
+.wrapper h1{
+    text-transform:uppercase ;
+    background-color: white;
+    background: linear-gradient(90deg,#f3090d,#f7b8a5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:clamp(32px,4vw,50px);
+}
+
+
+.boxes{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.boxes div{
+    margin: 50px;
+}
+
+.box1 {
+    width:50px;
+    height:50px;
+    background-color: rgb(52, 131, 210);
+    animation: rotate 3s infinite;
+    border-radius: 5px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box2 {
+    width:50px;
+    height:50px;
+    background-color: red;
+    animation: pulse 2s infinite;
+    border-radius: 5px;
+}
+
+@keyframes pulse{
+    0%,100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.box3{
+    width:50px;
+    height:50px;
+    background-color: rgb(0, 255, 102);
+    animation: slideIn 2s infinite;
+    border-radius: 5px;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+.box4 {
+    width:50px;
+    height:50px;
+    background-color: rgb(89, 0, 255);
+    animation: fadeIn 2s infinite;
+    border-radius: 5px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity:5;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+.box5 {
+    width:50px;
+    height:50px;
+    background-color: rgb(255, 130, 5);
+    animation: bounce 2s infinite;
+    border-radius: 5px;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.content{
+    margin:0% 20% 0% 20%;
+    columns:200px 2;
+    column-gap:30px;
+    padding:20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content h1{
+    column-span: all;
+    display: block;
+}
+
+
+.img-container{
+    background:url(1.jpg) center/cover no-repeat;
+    height: 100vh;
+    background-size: 50% 90%; 
+}
+.img-container img{
+    height: 100vh;
+}
+.img-container:before{
+    content:"";
+    position:absolute;
+    background: url(shape.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: screen;
+}

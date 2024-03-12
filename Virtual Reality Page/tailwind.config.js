@@ -14,7 +14,8 @@ module.exports = {
         oswald:["Oswald"],
         roboto:["Roboto"],
         playfair:["Playfair Display"],
-        poppins:["Poppins"]
+        poppins:["Poppins"],
+        sfui: ['SF UI', 'sans-serif']
       },
       letterSpacing:{
         widest:'.3em'

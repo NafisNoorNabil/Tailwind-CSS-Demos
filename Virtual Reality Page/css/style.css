@@ -867,6 +867,10 @@ h2 {
   font-family: Poppins;
 }
 
+.font-sfui {
+  font-family: SF UI, sans-serif;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -925,17 +929,20 @@ h2 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .duration-200 {
   transition-duration: 200ms;
 }
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+@font-face {
+  font-family: 'SF UI';
+
+  src: url('SFUIText-Light.ttf') format('truetype');
+
+  /* Add other font weights and styles as needed */
 }
 
 .section-container {
@@ -1008,9 +1015,8 @@ h2 {
   transform:rotate(-45deg) translateY(6px) translateX(-6px);
 }
 
-.hover\:border-violet-900:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(76 29 149 / var(--tw-border-opacity));
+.\*\:max-w-6xl > * {
+  max-width: 72rem;
 }
 
 .hover\:border-violet-400:hover {
